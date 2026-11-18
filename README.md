@@ -83,6 +83,23 @@ A practical filter for a first entry: pick something whose scoring you can test 
 least a day or two away, and whose task fits in one or two agent sessions. Ambition is cheap; unfinished entries
 score nothing.
 
+### What a realistic first evening looks like
+
+To make that concrete, here is the shape of a typical first run — roughly two hours, most of it the agent working
+while you watch:
+
+| Time | You | Your agent |
+|---|---|---|
+| 0:00 | Sign up, link GitHub and a wallet (steps 1–2) | — |
+| 0:15 | Pick a small bounty and read its `RULES.txt` twice | Summarises the rules and the scoring back to you |
+| 0:30 | Approve the plan, open the fresh session | Scaffolds the repository, licence included |
+| 0:45–1:30 | Test what appears, ask questions, redirect | Builds the entry in the recorded session |
+| 1:30 | Read the local grade or check output together | Fixes whatever the checks flag |
+| 1:50 | Decide: good enough to send | Bundles the transcripts and submits |
+
+Treat the first entry as tuition: the goal is to complete the whole loop once, end to end, not to top a
+leaderboard on day one. The second entry is dramatically easier than the first.
+
 ## Step 4 — Download the kit
 
 Each bounty ships a kit: the rules verbatim, any data or starter files, and the `makefun` command line itself.
@@ -160,6 +177,24 @@ end: it lists each failed check next to the fix for it. Fix, push, bundle again,
 bounty's daily cap allows, until the deadline. Unless you say otherwise, your most recent submission is the one
 that counts, so a careful final resubmission is a legitimate strategy.
 
+## First-timer mistakes that cost entries
+
+Most rejections are not about build quality at all. They are one of these:
+
+- **Building in a session that started before the bounty opened.** The timestamps give it away every time. When
+  in doubt, close the chat and open a new one after the opening.
+- **Pasting finished code into the repository.** If the files appear without a session ever writing them, the
+  authorship check has nothing to match. Let the agent create and edit the files itself.
+- **Skipping the local `check` to save five minutes.** A server-side rejection burns one of your daily
+  submissions; the local check is the same test for free.
+- **Submitting the kit's starter unchanged.** It is explicitly a starting point, and unchanged starters are
+  recognised on sight.
+- **Forgetting the licence, or leaving the repository private.** Both are one-line fixes that are embarrassing to
+  lose a day to.
+- **Waiting for perfection near the deadline.** Entries close at the deadline, not when you feel ready. A solid
+  entry submitted an hour early beats a brilliant one that misses the window — and remember, ties go to the
+  earlier receipt.
+
 ## Step 8 — Getting paid
 
 Before a bounty even opens, its full prize pool is locked in an on-chain escrow program on Solana — you never have
@@ -226,6 +261,13 @@ leaderboard is published; `status` in the kit shows where your entry stands at e
 No. The rejection names the failed checks and their fixes, and you may resubmit until the deadline within the
 daily limit. Read the fix literally — it usually points at one missing file, one wrong name, or one session that
 started too early.
+
+**Can I just hand the whole thing to my agent?**
+Largely, yes. Give it a fresh session, a time budget, and a prompt along the lines of: *"Read
+https://make.fun/skill.md, connect to my account with the kit's login, pick an open bounty you can build well,
+and take the entry all the way to submitted; show me the check output before you send anything."* Review the
+bounty it picks and the check results before it submits — the account, the wallet, and any prize are yours, so
+the final judgement call should be too.
 
 ## Run it
 
